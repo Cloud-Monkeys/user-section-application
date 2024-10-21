@@ -18,6 +18,7 @@ const SectionParticipation = db.define('SectionParticipation', {
         field: 'section_id'
     }
 }, {
+    tableName: 'section_participations',
     timestamps: false,
     indexes: [
         {
