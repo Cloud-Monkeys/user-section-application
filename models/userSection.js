@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const db = require('../config/db');
 
-const SectionParticipation = db.define('SectionParticipation', {
+const UserSection = db.define('UserSection', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -18,7 +18,7 @@ const SectionParticipation = db.define('SectionParticipation', {
         field: 'section_id'
     }
 }, {
-    tableName: 'section_participations',
+    tableName: 'user_sections',
     timestamps: false,
     indexes: [
         {
@@ -28,4 +28,4 @@ const SectionParticipation = db.define('SectionParticipation', {
     ]
 });
 
-module.exports = SectionParticipation;
+module.exports = UserSection;
